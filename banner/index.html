@@ -9,25 +9,25 @@
             margin: 0;
         }
         div {
-            width: 126px;
-            height: 86px;
-            margin: 200px auto;
+            width: 300px;
+            height: 500px;
+            margin: 100px auto;
             overflow: hidden;
         }
         div > ul {
             /*设置ul的宽度为2倍div的宽度*/
-            width: 630px;
+            width: 500%;
             list-style: none;
             /*动画属性*/
-            animation: imgMove 10s infinite;
+            animation: imgMove 15s infinite;
 
         }
         div > ul > li {
-            width: 126px;
             float: left;
         }
         div img {
-            width: 100%;
+            width: 300px;
+            height: 500px;
         }
         /*创建动画*/
         @keyframes imgMove {
@@ -35,16 +35,16 @@
                 transform: translateX(0px);
             }
             25%{
-                transform: translateX(-126px);
+                transform: translateX(-300px);
             }
             50%{
-                transform: translateX(-252px);
+                transform: translateX(-600px);
             }
             75%{
-                transform: translateX(-378px);
+                transform: translateX(-900px);
             }
             100% {
-                transform: translateX(-504px);
+                transform: translateX(-1200px);
             }
         }
     </style>
