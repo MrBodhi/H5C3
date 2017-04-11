@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        div {
+            width: 126px;
+            height: 86px;
+            margin: 200px auto;
+            overflow: hidden;
+        }
+        div > ul {
+            /*设置ul的宽度为2倍div的宽度*/
+            width: 630px;
+            list-style: none;
+            /*动画属性*/
+            animation: imgMove 10s infinite;
+
+        }
+        div > ul > li {
+            width: 126px;
+            float: left;
+        }
+        div img {
+            width: 100%;
+        }
+        /*创建动画*/
+        @keyframes imgMove {
+            0% {
+                transform: translateX(0px);
+            }
+            25%{
+                transform: translateX(-126px);
+            }
+            50%{
+                transform: translateX(-252px);
+            }
+            75%{
+                transform: translateX(-378px);
+            }
+            100% {
+                transform: translateX(-504px);
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+    <ul>
+        <li><img src="images/1.jpg" alt=""/></li>
+        <li><img src="images/2.jpg" alt=""/></li>
+        <li><img src="images/3.jpg" alt=""/></li>
+        <li><img src="images/4.jpg" alt=""/></li>
+        <li><img src="images/1.jpg" alt=""/></li>
+    </ul>
+</div>
+</body>
+</html>
